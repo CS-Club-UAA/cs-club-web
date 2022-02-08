@@ -22,7 +22,7 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <h1>Hello world</h1>
+        <h1>Hello CS club</h1>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
