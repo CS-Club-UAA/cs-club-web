@@ -1,42 +1,18 @@
-import { Link, Outlet } from "remix";
+import { Link, Outlet } from 'remix';
 
 export default function Blogs() {
-
-  function hello() {
-    return "hello"
-  }
-
-  console.log(hello());
-
   return (
-    <div className='jokes-layout'>
-      <header className='jokes-header'>
-        <div className='container'>
-          <h1 className='home-link'>
-            <Link to='/' title='Remix Jokes' aria-label='Remix Jokes'>
-              <span className='logo'>🤪</span>
-              <span className='logo-medium'>BLOGS</span>
-            </Link>
-          </h1>
-        </div>
+    <div>
+      <header>
+        <h1>
+          <Link to='/' title='blogs' aria-label='blogs'>
+            <span>BLOGS</span>
+          </Link>
+        </h1>
       </header>
-      <main className='jokes-main'>
-        <div className='container'>
-          <div className='jokes-list'>
-            <Link to='.'>Get a random joke</Link>
-            <p>Here are a few more jokes to check out:</p>
-            <ul>
-              <li>
-                <Link to='some-joke-id'>Hippo</Link>
-              </li>
-            </ul>
-            <Link to='new' className='button'>
-              Add your own
-            </Link>
-          </div>
-          <div className='jokes-outlet'>
-            <Outlet />
-          </div>
+      <main>
+        <div>
+          <Outlet />
         </div>
       </main>
     </div>
