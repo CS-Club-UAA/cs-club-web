@@ -54,9 +54,9 @@ export const useBlog = (): useBlogType => {
         .collection('blogs')
         .doc(id)
         .get()
-        .then((doc) => {
-          if (doc.exists) {
-            return doc.data() as BlogData;
+        .then((blog) => {
+          if (blog.exists) {
+            return blog.data() as BlogData;
           } else {
             console.log('No such document!');
           }

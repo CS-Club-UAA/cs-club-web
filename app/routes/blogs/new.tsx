@@ -22,22 +22,22 @@ export default function NewBlog() {
   return (
     <div>
       <p>Add blog</p>
-      <form method='post'>
+      <form method="post">
         <div>
           <label>
-            Name: <input type='text' name='name' />
+            Name: <input type="text" name="name" />
           </label>
         </div>
         <div>
           <label>
-            Content: <textarea name='content' />
+            Content: <textarea name="content" />
           </label>
         </div>
         <div>
-          <button type='submit'>Add</button>
+          <button type="submit">Add</button>
         </div>
       </form>
-      <Link to='/blogs'>go back</Link>
+      <Link to="/blogs">go back</Link>
     </div>
   );
 }

@@ -5,7 +5,7 @@ export default function Blogs() {
     <div>
       <header>
         <h1>
-          <Link to='/' title='blogs' aria-label='blogs'>
+          <Link to="/" title="blogs" aria-label="blogs">
             <span>BLOGS</span>
           </Link>
         </h1>

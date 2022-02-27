@@ -1,5 +1,5 @@
-import type { LoaderFunction } from 'remix';
-import { Link, useLoaderData } from 'remix';
+/* eslint-disable require-jsdoc */
+import { Link, useLoaderData, LoaderFunction } from 'remix';
 import { useBlog } from '~/hooks/useBlog';
 import { BlogData } from '~/utils/types';
 
@@ -20,7 +20,7 @@ export default function Blog() {
     <div>
       <strong>Name: {data.name}</strong>
       <p>{data.content}</p>
-      <Link to='/blogs'>go back</Link>
+      <Link to="/blogs">go back</Link>
     </div>
   );
 }

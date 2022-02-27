@@ -1,12 +1,9 @@
 import { Link, LoaderFunction, useLoaderData } from 'remix';
-import { db } from '~/firebase/firebase.server';
 import { useBlog } from '~/hooks/useBlog';
-// import { db } from '~/utils/db.server';
 import { BlogData } from '~/utils/types';
 
-export let loader: LoaderFunction = async () => {
+export const loader: LoaderFunction = async () => {
   const { getBlogs } = useBlog();
-
   const data: BlogData[] | undefined = await getBlogs();
 
   return data;
@@ -24,7 +21,7 @@ export default function Blogs() {
           </li>
         ))}
       </ul>
-      <Link to='new'>Add blog</Link>
+      <Link to="new">Add blog</Link>
     </div>
   );
 }
