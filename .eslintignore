@@ -4,3 +4,4 @@
 remix.config.js
 /.cache
 /.husky
+remix.env.d.ts
