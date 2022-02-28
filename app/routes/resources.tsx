@@ -1,6 +1,6 @@
 import { Link, Outlet } from 'remix';
 
-export default function Blogs() {
+export default function Resources() {
   return (
     <div>
       <header>

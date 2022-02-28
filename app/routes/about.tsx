@@ -1,11 +1,11 @@
 import { Link, Outlet } from 'remix';
 
-export default function Blogs() {
+export default function About() {
   return (
     <div>
       <header>
       </header>
-      
+
       <main>
         <div>
           <Outlet />

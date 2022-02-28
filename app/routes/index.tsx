@@ -1,18 +1,17 @@
 import { Link } from 'remix';
 
+
 export default function Index() {
   return (
-    <div>
-      <div>
-        <h1>CS club web project</h1>
-        <nav>
-          <ul>
-            <li>
-              <Link to="blogs">Read blogs</Link>
-            </li>
-          </ul>
-        </nav>
+    <body>
+      
+      <div className="card text-white">
+        <img src="mountainLogo.jpg" className="card-img" alt="Alaskan Mountain Image taken by Mya Schroder"/>
+        <div className="card-img-overlay">
+        </div>
       </div>
-    </div>
+
+    </body>
+    
   );
 }
